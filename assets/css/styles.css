@@ -723,13 +723,19 @@ blockquote {
 /* footer */
 
 footer {
-    padding: 96px 0 100px 0;
+    padding: 96px 0 28px 0;
     background-color: #2e2100;
 }
 
 .footer-list,
 .footer-right {
     display: flex;
+}
+
+.footer-list {
+    padding: 38px;
+    border-bottom: 1px solid #59554b;
+    margin-bottom: 28px;
 }
 
 .footer-link {
@@ -798,16 +804,16 @@ footer {
     color: var(--primary-color);
 }
 
-footer .line {
+/* footer .line {
     width: 100%;
     height: 1px;
     background-color: #59554b;
     margin: 38px 0 28px 0;
-}
+} */
 
 footer .copyright {
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     font-size: 1.4rem;
     line-height: 1.86;
     text-align: center;
