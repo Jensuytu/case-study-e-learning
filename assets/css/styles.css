@@ -82,7 +82,8 @@ a {
 }
 .header .body {
     display: flex;
-    padding: 36px 0 8px; /* justify-content: center; */
+    padding: 36px 0 8px;
+    /* justify-content: center; */
     align-items: center;
 }
 
@@ -132,12 +133,15 @@ a {
 
 /* ======Hero===== */
 .hero {
-    padding-top: 56px;
-    padding-bottom: 65px;
+    /* padding-top: 56px; */
+    /* padding-bottom: 65px; */
+    display: flex;
+    justify-content: center;
 }
 .hero .body {
     display: flex;
     align-items: center;
+    height: calc(100vh - 94px);
 }
 
 /* hero-right */
@@ -147,8 +151,8 @@ a {
 }
 
 .media-block img.img {
-    width: 470px;
-    height: 685px;
+    /* width: 470px; */
+    height: 50vh;
     border-radius: 20px;
     object-fit: cover;
 }
@@ -280,6 +284,7 @@ button {
     display: flex;
     align-items: center;
     cursor: pointer;
+    flex-shrink: 0;
 }
 
 .hero .watch-video .icon {
@@ -323,7 +328,7 @@ button {
 
 /* popular */
 .popular .main-content {
-    padding: 200px 0;
+    padding: 0 0 200px 0;
 }
 .popular-top .heading {
     font-family: var(--font-heading);
@@ -384,12 +389,15 @@ button {
 .popular .course-list {
     display: flex;
     gap: 30px;
+    overflow: hidden;
 }
 .popular .course-item {
-    flex: 1;
+    width: calc(33.33% - 30px);
+    min-width: 310px;
     background: #ffffff;
     border: 1px solid #e2dfda;
     border-radius: 12px;
+    flex-shrink: 0;
 }
 /* .course-item:first-child {
     margin-left: 0;
@@ -496,7 +504,7 @@ button {
     font-style: normal;
     font-weight: 700;
     font-size: 2.4rem;
-    line-height: 1.42px;
+    line-height: 1.42;
     /* color: #f7f7f7; */
     color: #171100;
     margin: 18px 0 4px 0;
@@ -621,7 +629,7 @@ blockquote {
     text-align: center;
     color: #696262;
     margin: 16px auto 55px auto;
-    width: 448px;
+    max-width: 448px;
 }
 
 .blogs-list {
@@ -633,6 +641,7 @@ blockquote {
 .blogs-items {
     width: calc(33.33% - 20px);
     flex-shrink: 0;
+    min-width: 310px;
     /* khong nen dung flex bang 1 o day */
     /* transition: all ease 0.3s; */
     /* transform: translateX(-100%); */
@@ -733,7 +742,7 @@ footer {
 }
 
 .footer-list {
-    padding: 38px;
+    padding-bottom: 38px;
     border-bottom: 1px solid #59554b;
     margin-bottom: 28px;
 }
@@ -803,13 +812,6 @@ footer {
 .footer-right .content a:hover {
     color: var(--primary-color);
 }
-
-/* footer .line {
-    width: 100%;
-    height: 1px;
-    background-color: #59554b;
-    margin: 38px 0 28px 0;
-} */
 
 footer .copyright {
     /* display: flex;
